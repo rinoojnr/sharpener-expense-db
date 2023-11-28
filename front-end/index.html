@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-App</title>
+</head>
+<body>
+    <form id="expense-app" method="POST" >
+        <label for="amount">Amount : </label>
+        <input type="number" id="amount" name="expense">
+        <label for="description">Description : </label>
+        <input type="text" id="description" name="description">
+        <label for="category">Category</label>
+        <select id="category">
+            <option>Food</option>
+            <option>Travel</option>
+            <option>Rent</option>
+            <option>Fuel</option>
+            <option>Others</option>
+        </select>
+        <button type="submit" id="submit">Submit</button>
+    </form> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+    <ul id="expense-list">
+    </ul>
+    <script src="index.js"></script>
+</body>
+</html>
